@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-02-24T04:00:00Z",
+  "description": "RR3 Community Edition version manifest. Controls OTA update offerings.",
+  
+  "channels": {
+    "stable": {
+      "description": "Stable releases for all users",
+      "latest": "15.0.0"
+    },
+    "beta": {
+      "description": "Beta testing channel (opt-in)",
+      "latest": null
+    },
+    "legacy-v14": {
+      "description": "Legacy v14.x maintenance line",
+      "latest": null
+    }
+  },
+  
+  "versions": [
+    {
+      "version": "15.0.0",
+      "version_code": 150000,
+      "channel": "stable",
+      "release_date": "2026-02-24",
+      "min_android": 23,
+      "target_android": 34,
+      "download_url": "https://github.com/project-real-resurrection-3/rr3-releases/releases/download/v15.0.0/RR3-Community-v15.0.0.apk",
+      "file_size": 0,
+      "sha256": "pending",
+      "changelog": "## 🎉 RR3 Community Edition - Initial Release\n\n### ✨ Features\n- 🖥️ Community server support\n- 👥 Friends & multiplayer\n- 📊 Leaderboards & tournaments\n- 🔄 OTA auto-updates (WiFi & mobile data)\n- 🌐 Server browser\n- 📱 Android 6.0+ support\n\n### 🎮 What This Is\nReal Racing 3 Community Edition preserves the game after EA's server shutdown. Connect to community-run servers and keep racing!\n\n### ⚠️ Requirements\n- Android 6.0 (API 23) or higher\n- Original RR3 game installation or data\n- Internet connection for multiplayer\n\n### ⚖️ Legal\nThis is an independent community project. Not affiliated with EA. See [LEGAL.md](https://github.com/project-real-resurrection-3/.github/blob/main/LEGAL.md) for full legal documentation.\n\n---\n\n🏁 **The game will never die!** 🏁",
+      "upgrade_from": [],
+      "notes": "Initial community release. No prior versions to upgrade from."
+    }
+  ],
+  
+  "_comments": {
+    "schema_version": "Manifest format version. Increment if structure changes.",
+    "last_updated": "ISO 8601 timestamp of last manifest update.",
+    "channels": "Update channels. Users stay in their channel unless they opt-in to another.",
+    "versions": "Array of all available versions. Order doesn't matter.",
+    "version_code": "Integer for comparison. Formula: major*100000 + minor*1000 + patch",
+    "upgrade_from": "Array of versions that can upgrade to this one. Empty = initial release.",
+    "download_url": "Direct APK download URL from GitHub Releases.",
+    "file_size": "APK file size in bytes. 0 = pending upload.",
+    "sha256": "SHA-256 checksum. 'pending' = not yet calculated.",
+    "maintenance": "To add new version: 1) Create GitHub release, 2) Update this JSON with new entry, 3) Update channel 'latest', 4) Commit and push"
+  }
+}
